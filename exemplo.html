@@ -1,0 +1,17 @@
+<script>
+    let lista1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    let numerosPares = [];
+    let numerosImpares = [];
+
+    for (numero of lista1){
+        if (numero % 2 == 0){
+            numerosPares.push(numero);
+            alert(`O número ${numero} é par! ${numerosPares}`);
+        }
+        else {
+            numerosImpares.push(numero)
+            alert(`O número ${numero} é impar! ${numerosImpares}`);
+        }
+}
+</script>
