@@ -1,16 +1,23 @@
 <script>
-    let listaNome = ["Alberto", "Maria", "Rafael", "Eloisa", "joão", "Amanda", "Eduardo"];
+    let listaNome = ["Arnaldo", "Alberto", "Maria", "Rafael", "Heloisa", "João", "Amanda", "Eduardo", "Victor", "Yago", "Thiago", "Xania", "Wagner", "Julia", "Luiza", "Osmar", "Nilton", "Samira", "Rodrigo", "Paulo", "Douglas", "Quinci", "Ugo", "Gabriel", "Kevin", "Carlos", "Bruna", "Fernanda", "Igor", "Zyra"];
     let nomesComecamA = [];
     let demaisNomes = [];
 
+    const letra = prompt("Escolha uma letra inicial para separa a lista. (Os nome são " + listaNome.join(" | ") + ").").toUpperCase();
+
     for (let nome of listaNome) {
-        let primeiraLetra = nome[0].charAt(0)
-        if (primeiraLetra === "A") {
+        let primeiraLetra = nome[0].charAt(0);
+        if (primeiraLetra === letra) {
             nomesComecamA.push(nome);
         } else {
             demaisNomes.push(nome);
         }
     }
-    document.write("Nomes começados em A: " + nomesComecamA.join(" | ") + ".</br>")
-    document.write("Outros nomes: " + demaisNomes.join(" | ") + ".</br>");
+    document.write("Nomes começados em " + letra + ":<br>");
+    document.write("</br>")
+    for (nome of nomesComecamA) document.write("<li>" + nome + ".</li></br>");
+    document.write("<br>");
+    document.write("Outros nomes:<br>");
+    document.write("</br>")
+    for (nome of demaisNomes) document.write("<li> " + nome + ".</li></br>");
 </script>

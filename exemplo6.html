@@ -1,0 +1,10 @@
+<meta charset="UTF-8">
+<script>
+    const vezes = parseInt(prompt("Quantos nome(s)?"))
+    alert("Insira " + vezes + " nome(s):");
+    let lista = [];
+    for (contador = 1; contador <= vezes; contador++) {
+        lista.push(prompt("Nome(s): "));
+    }
+    document.write("O(s) nome(s) são: " + lista.join(", ") + ".");
+</script>
