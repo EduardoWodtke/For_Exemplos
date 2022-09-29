@@ -1,12 +1,11 @@
 <meta charset="UTF-8">
 <script>
-    let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-    const fatorial = parseInt(prompt("Número para calcular fatorial:"));
+    let fatorial = parseInt(prompt("Número para calcular fatorial:"));
     let resultado = 1;
 
-    for(contador = 1; contador <= fatorial; contador ++){
-        const resultado = contador 
+    for(let contador = 1; contador <= fatorial;contador ++){
+        resultado = resultado * contador
+        alert("O valor é: " + resultado + ".")
     }
-
-    alert("O valor é: " + resultado + ".")
+    document.write("O valor do número " + fatorial + " é " + resultado.toFixed(5) + "... em fatorial.");
 </script>

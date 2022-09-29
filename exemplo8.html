@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    const numeroPrimo = parseInt(prompt("Qual número deseja valida se é número primo:"));
+    let divisivel = 0;
+
+    if (numeroPrimo > 1){
+
+    
+    for (let contador = 1; contador <= numeroPrimo; contador ++){
+        if(numeroPrimo % contador === 0){
+            divisivel ++;
+        }
+    }
+    if(divisivel === 2){
+        document.write("O número " + numeroPrimo + " é primo")
+    } else {
+        document.write("O número " + numeroPrimo + " não é primo")
+    }
+}else {
+    document.write("digite um número maior que " + numeroPrimo);
+}
+</script>
